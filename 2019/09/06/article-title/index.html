@@ -83,7 +83,7 @@
 <meta name="keywords" content="多线程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java创建多线程的方式有几种">
-<meta property="og:url" content="http://yoursite.com/2019/09/06/article-title/index.html">
+<meta property="og:url" content="http://chenqiang.online/2019/09/06/article-title/index.html">
 <meta property="og:site_name" content="Chen&#39;s Blog">
 <meta property="og:description" content="Java创建多线程的方式有四种1.继承Thread类123456789101112131415161718192021222324252627282930313233/** * 多线程的创建方式一：继承Thread类 * 例子：遍历100以内的偶数 *///1.创建一个类继承Threadclass MyThread extends Thread&amp;#123;    //2.重写父类的run方法">
 <meta property="og:locale" content="zh-Hans">
@@ -100,7 +100,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/09/06/article-title/">
+  <link rel="canonical" href="http://chenqiang.online/2019/09/06/article-title/">
 
 
 
@@ -137,6 +137,11 @@
 
 
 </head>
+
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -263,7 +268,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/06/article-title/">
+    <link itemprop="mainEntityOfPage" href="http://chenqiang.online/2019/09/06/article-title/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chen">
@@ -367,15 +372,16 @@
     
     
 	<div>
-	
+	  
 		<div>
-
-    <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
-
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
 </div>
 
-	
+	  
 	</div>
+
 
     
 
@@ -502,6 +508,28 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/cxmda" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="saumo136@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_40493349" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-crosshairs"></i>CSDN</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -582,6 +610,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -743,6 +773,6 @@
 
   
 
-  <script type="text/javascript" src="../source/js/src/love.js"></script>
+
 </body>
 </html>
